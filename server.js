@@ -6,7 +6,7 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 8080;
 
 corsProxy.createServer({
-    originWhitelist: ['http://localhost:54106', 'https://gianini-manutencao.web.app', 'https://gianini-manutencao-dev.web.app'],
+    originWhitelist: ['http://localhost:54106', 'https://gianini-manutencao.web.app', 'https://gianini-manutencao-dev.web.app', 'https://trial-manutencao-app.web.app'],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {
